@@ -99,7 +99,7 @@ export default function Home() {
           <div className="screenshots__grid">
             <div className="screenshot-card">
               <img
-                src="/oddslab-landing/screenshots/model_builder.png"
+                src="/screenshots/model_builder.png"
                 alt="Custom Model Builder"
                 className="screenshot-card__image"
               />
@@ -114,7 +114,7 @@ export default function Home() {
 
             <div className="screenshot-card">
               <img
-                src="/oddslab-landing/screenshots/feature_registry.png"
+                src="/screenshots/feature_registry.png"
                 alt="Feature Registry"
                 className="screenshot-card__image"
               />
@@ -129,7 +129,7 @@ export default function Home() {
 
             <div className="screenshot-card">
               <img
-                src="/oddslab-landing/screenshots/find_value_bet.png"
+                src="/screenshots/find_value_bet.png"
                 alt="Value Bet Finder"
                 className="screenshot-card__image"
               />
