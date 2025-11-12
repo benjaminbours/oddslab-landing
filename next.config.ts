@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/oddslab-landing',
   reactCompiler: true,
 };
 
