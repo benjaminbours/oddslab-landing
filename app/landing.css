@@ -1,0 +1,338 @@
+/* Landing Page Styles - BEM Methodology */
+/* Matches the dark theme from the main app */
+
+/* ============================================
+   Hero Section
+   ============================================ */
+
+.lab-word {
+  color: #ffc107;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #0f1116;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(74, 158, 255, 0.1) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+.hero__content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__brand {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #4a9eff;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: #888888;
+  font-weight: 400;
+}
+
+.hero__cta {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background: #4a9eff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+}
+
+.hero__cta:hover {
+  background: #6ab4ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(74, 158, 255, 0.4);
+}
+
+/* ============================================
+   Features Section
+   ============================================ */
+
+.features {
+  padding: 6rem 2rem;
+  background: #1a1d24;
+}
+
+.features__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #ffffff;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  padding: 2rem;
+  background: #2a2f3a;
+  border: 1px solid #3a3f4a;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: #4a9eff;
+  box-shadow: 0 8px 24px rgba(74, 158, 255, 0.2);
+}
+
+.feature-card__icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.feature-card__description {
+  font-size: 0.938rem;
+  line-height: 1.6;
+  color: #888888;
+}
+
+/* ============================================
+   Screenshots Section
+   ============================================ */
+
+.screenshots {
+  padding: 6rem 2rem;
+  background: #0f1116;
+}
+
+.screenshots__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.screenshots__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.screenshots__subtitle {
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #888888;
+}
+
+.screenshots__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.screenshot-card {
+  background: #1a1d24;
+  border: 1px solid #2a2f3a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.screenshot-card:hover {
+  border-color: #4a9eff;
+  box-shadow: 0 8px 24px rgba(74, 158, 255, 0.2);
+}
+
+.screenshot-card__image {
+  width: 100%;
+  height: 300px;
+  display: block;
+  background: #2a2f3a;
+  object-fit: cover;
+  object-position: top;
+}
+
+.screenshot-card__caption {
+  padding: 1.5rem;
+}
+
+.screenshot-card__title {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.screenshot-card__description {
+  font-size: 0.938rem;
+  line-height: 1.5;
+  color: #888888;
+}
+
+/* ============================================
+   CTA Section
+   ============================================ */
+
+.cta-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(74, 158, 255, 0.15) 0%,
+    rgba(106, 180, 255, 0.05) 100%
+  );
+  border-top: 1px solid #2a2f3a;
+  border-bottom: 1px solid #2a2f3a;
+  color: white;
+  text-align: center;
+}
+
+.cta-section__title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cta-section__subtitle {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  color: #888888;
+}
+
+.cta-section__button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background: #4a9eff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+}
+
+.cta-section__button:hover {
+  background: #6ab4ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(74, 158, 255, 0.4);
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+.footer {
+  padding: 3rem 2rem;
+  background: #0f1116;
+  border-top: 1px solid #1a1d24;
+  color: white;
+  text-align: center;
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__text {
+  margin-bottom: 1rem;
+  color: #888888;
+  font-size: 0.938rem;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer__link {
+  color: #4a9eff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 0.938rem;
+}
+
+.footer__link:hover {
+  color: #6ab4ff;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hero__brand {
+    font-size: 2.5rem;
+  }
+
+  .hero__title {
+    font-size: 1.75rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.125rem;
+  }
+
+  .features__title,
+  .cta-section__title {
+    font-size: 2rem;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+}
