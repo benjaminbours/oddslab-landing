@@ -187,6 +187,14 @@ export default function Home() {
               GitHub
             </a>
             <a
+              href="https://discord.gg/wCkkH8XKwD"
+              className="footer__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Discord
+            </a>
+            <a
               href="https://ko-fi.com/oddslab"
               className="footer__link"
               target="_blank"
