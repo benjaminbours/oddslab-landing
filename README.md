@@ -2,7 +2,7 @@
 
 Landing page for **OddsLab** - Your Football Prediction Laboratory
 
-**Live Site:** [oddslab.gg](https://oddslab.gg) (coming soon)
+**Live Site:** [oddslab.gg](https://oddslab.gg)
 **App:** [app.oddslab.gg](https://app.oddslab.gg)
 
 ## Tech Stack
@@ -187,7 +187,7 @@ This project uses **BEM (Block Element Modifier)** methodology for CSS:
 
 - **Main App:** [app.oddslab.gg](https://app.oddslab.gg)
 - **GitHub:** [@benjaminbours](https://github.com/benjaminbours)
-- **Ko-fi:** [Support Development](https://ko-fi.com/benjaminbours)
+- **Ko-fi:** [Support Development](https://ko-fi.com/oddslab)
 
 ## License
 
@@ -195,4 +195,4 @@ This project uses **BEM (Block Element Modifier)** methodology for CSS:
 
 ---
 
-Built with ⚽ and 📊 by [Benjamin Bours](https://github.com/benjaminbours)
+Built with ⚽ and 📊 by [Benjamin Bours](https://benjaminbours.github.io/portfolio)
