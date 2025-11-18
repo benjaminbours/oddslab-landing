@@ -14,12 +14,22 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "OddsLab - Your Football Prediction Laboratory",
-  description: "Experiment with models, test theories, find value bets. Interactive football prediction tools for passionate fans and data-driven bettors.",
-  keywords: ["football betting", "soccer predictions", "expected value", "sports betting", "data analytics", "value betting", "prediction models"],
+  description:
+    "Experiment with models, test theories, find value bets. Interactive football prediction tools for passionate fans and data-driven bettors.",
+  keywords: [
+    "football betting",
+    "soccer predictions",
+    "expected value",
+    "sports betting",
+    "data analytics",
+    "value betting",
+    "prediction models",
+  ],
   authors: [{ name: "Benjamin Bours" }],
   openGraph: {
     title: "OddsLab - Your Football Prediction Laboratory",
-    description: "Experiment with models, test theories, find value bets. Interactive football prediction tools for passionate fans.",
+    description:
+      "Experiment with models, test theories, find value bets. Interactive football prediction tools for passionate fans.",
     url: "https://oddslab.gg",
     siteName: "OddsLab",
     type: "website",
@@ -38,9 +48,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-      </head> */}
+      <head>
+        {/* <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-FTBXHSTHLW"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-FTBXHSTHLW');
+        `,
+          }}
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
