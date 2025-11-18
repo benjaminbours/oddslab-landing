@@ -161,6 +161,13 @@ export default function Home() {
         >
           Try Beta Now
         </a>
+        <p
+          className="cta-section__subtitle"
+          style={{ marginBottom: 0, marginTop: "1.5rem" }}
+        >
+          OddsLab will remain free during beta. Supporters will get early access
+          to advanced features.
+        </p>
       </section>
 
       {/* Footer */}
