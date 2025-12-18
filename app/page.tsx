@@ -1,5 +1,48 @@
 import "./landing.css";
 
+type ToolStatus = "live" | "alpha" | "beta" | "coming-soon";
+
+interface Tool {
+  icon: string;
+  title: string;
+  description: string;
+  status: ToolStatus;
+  url?: string;
+}
+
+const tools: Tool[] = [
+  {
+    icon: "📈",
+    title: "Bookmaker Intelligence",
+    description:
+      "Track odds movements across bookmakers and spot steam moves before markets adjust.",
+    status: "live",
+    url: "https://market.oddslab.gg",
+  },
+  {
+    icon: "🧪",
+    title: "Model Builder",
+    description:
+      "Build custom xG prediction models. Test your football theories with real data.",
+    status: "alpha",
+    url: "https://app.oddslab.gg",
+  },
+  {
+    icon: "💎",
+    title: "Value Bet Scanner",
+    description:
+      "Daily value opportunities based on your model predictions vs bookmaker odds.",
+    status: "coming-soon",
+  },
+  {
+    icon: "🔄",
+    title: "Backtest Lab",
+    description:
+      "Test strategies against historical data. See what would have worked before risking real money.",
+    status: "coming-soon",
+  },
+];
+
 export default function Home() {
   return (
     <div>
@@ -9,164 +52,99 @@ export default function Home() {
           <h1 className="hero__brand">
             Odds <span className="lab-word">Lab</span>
           </h1>
-          <h2 className="hero__title">Your Football Prediction Laboratory</h2>
+          <h2 className="hero__title">Smart Football Betting Tools</h2>
           <p className="hero__subtitle">
-            Experiment with models, test theories, find value bets
+            A suite of tools for data-driven football betting. Start simple, go
+            deep.
           </p>
-          <a
-            href="https://app.oddslab.gg"
-            className="hero__cta"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Launch App (Beta)
+          <a href="#tools" className="hero__cta">
+            Explore Tools
           </a>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="features">
-        <div className="features__container">
-          <h2 className="features__title">
-            Why Odds <span className="lab-word">Lab</span>?
+      {/* Tools Section */}
+      <section className="tools" id="tools">
+        <div className="tools__container">
+          <h2 className="tools__title">
+            The Odds<span className="lab-word">Lab</span> Suite
           </h2>
-          <div className="features__grid">
-            <div className="feature-card">
-              <div className="feature-card__icon">🧪</div>
-              <h3 className="feature-card__title">Test Your Theories</h3>
-              <p className="feature-card__description">
-                Think home advantage matters more in certain leagues? Believe in
-                momentum? Build models based on what you think matters most.
-              </p>
-            </div>
-
-            <div className="feature-card">
-              <div className="feature-card__icon">📊</div>
-              <h3 className="feature-card__title">Data-Driven Predictions</h3>
-              <p className="feature-card__description">
-                Combine your football knowledge with statistical rigor.
-                Poisson-based models, expected goals (xG), and historical data
-                at your fingertips.
-              </p>
-            </div>
-
-            <div className="feature-card">
-              <div className="feature-card__icon">💎</div>
-              <h3 className="feature-card__title">Find Value Bets</h3>
-              <p className="feature-card__description">
-                Identify bets where the odds are in your favor. Focus on
-                Expected Value (EV) and beat the closing line.
-              </p>
-            </div>
-
-            <div className="feature-card">
-              <div className="feature-card__icon">⚡</div>
-              <h3 className="feature-card__title">Instant Calculations</h3>
-              <p className="feature-card__description">
-                Built with Rust and WebAssembly for blazing-fast predictions.
-                Experiment and iterate without waiting.
-              </p>
-            </div>
-
-            <div className="feature-card">
-              <div className="feature-card__icon">🔄</div>
-              <h3 className="feature-card__title">Backtest Strategies</h3>
-              <p className="feature-card__description">
-                Test your models against historical data. See what would have
-                worked before risking real money.
-              </p>
-            </div>
-
-            <div className="feature-card">
-              <div className="feature-card__icon">🎯</div>
-              <h3 className="feature-card__title">Full Control</h3>
-              <p className="feature-card__description">
-                Not a black box. Understand every prediction. Adjust parameters,
-                experiment with features, make it yours.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Screenshots Section */}
-      <section className="screenshots">
-        <div className="screenshots__container">
-          <h2 className="screenshots__title">See It In Action</h2>
-          <p className="screenshots__subtitle">
-            Explore the interface and features that make OddsLab powerful
+          <p className="tools__subtitle">
+            Start with one tool, expand as you need. Each tool works standalone
+            or together.
           </p>
-          <div className="screenshots__grid">
-            <div className="screenshot-card">
-              <img
-                src="/screenshots/model_builder.png"
-                alt="Custom Model Builder"
-                className="screenshot-card__image"
-              />
-              <div className="screenshot-card__caption">
-                <h3 className="screenshot-card__title">Build Custom Models</h3>
-                <p className="screenshot-card__description">
-                  Adjust weights, select features, and create prediction models
-                  tailored to your theories
-                </p>
-              </div>
-            </div>
+          <div className="tools__grid">
+            {tools.map((tool, index) => {
+              const isClickable = tool.status !== "coming-soon";
+              const CardWrapper = isClickable ? "a" : "div";
+              const cardProps = isClickable
+                ? {
+                    href: tool.url,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  }
+                : {};
 
-            <div className="screenshot-card">
-              <img
-                src="/screenshots/feature_registry.png"
-                alt="Feature Registry"
-                className="screenshot-card__image"
-              />
-              <div className="screenshot-card__caption">
-                <h3 className="screenshot-card__title">Feature Registry</h3>
-                <p className="screenshot-card__description">
-                  Browse and select from a library of statistical features to
-                  power your predictions
-                </p>
-              </div>
-            </div>
-
-            <div className="screenshot-card">
-              <img
-                src="/screenshots/find_value_bet.png"
-                alt="Value Bet Finder"
-                className="screenshot-card__image"
-              />
-              <div className="screenshot-card__caption">
-                <h3 className="screenshot-card__title">Find Value Bets</h3>
-                <p className="screenshot-card__description">
-                  Compare your model's predictions against bookmaker odds to
-                  identify value opportunities
-                </p>
-              </div>
-            </div>
+              return (
+                <CardWrapper
+                  key={index}
+                  className={`tool-card tool-card--${tool.status}`}
+                  {...cardProps}
+                >
+                  <div className="tool-card__header">
+                    <div className="tool-card__icon">{tool.icon}</div>
+                    <span
+                      className={`tool-card__badge tool-card__badge--${tool.status}`}
+                    >
+                      {tool.status === "live" && "Live"}
+                      {tool.status === "alpha" && "Alpha"}
+                      {tool.status === "beta" && "Beta"}
+                      {tool.status === "coming-soon" && "Coming Soon"}
+                    </span>
+                  </div>
+                  <h3 className="tool-card__title">{tool.title}</h3>
+                  <p className="tool-card__description">{tool.description}</p>
+                  {isClickable && (
+                    <span className="tool-card__action">
+                      {tool.status === "live" && "Launch →"}
+                      {tool.status === "alpha" && "Try Alpha →"}
+                      {tool.status === "beta" && "Try Beta →"}
+                    </span>
+                  )}
+                </CardWrapper>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="cta-section">
-        <h2 className="cta-section__title">
-          Ready to Test Your Football Theories?
-        </h2>
+        <h2 className="cta-section__title">Ready to Level Up Your Betting?</h2>
         <p className="cta-section__subtitle">
-          Join OddsLab and start building smarter predictions today
+          Start with Bookmaker Intelligence - it's live and free to use
         </p>
-        <a
-          href="https://app.oddslab.gg"
-          className="cta-section__button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Try Beta Now
-        </a>
-        <p
-          className="cta-section__subtitle"
-          style={{ marginBottom: 0, marginTop: "1.5rem" }}
-        >
-          OddsLab will remain free during beta. Supporters will get early access
-          to advanced features.
+        <div className="cta-section__buttons">
+          <a
+            href="https://market.oddslab.gg"
+            className="cta-section__button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Launch Bookmaker Intelligence
+          </a>
+          <a
+            href="https://app.oddslab.gg"
+            className="cta-section__button cta-section__button--secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Try Model Builder (Alpha)
+          </a>
+        </div>
+        <p className="cta-section__note">
+          All tools are free during beta. Supporters will get early access to
+          advanced features.
         </p>
       </section>
 

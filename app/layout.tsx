@@ -13,31 +13,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OddsLab - Your Football Prediction Laboratory",
+  title: "OddsLab - Smart Football Betting Tools",
   description:
-    "Experiment with models, test theories, find value bets. Interactive football prediction tools for passionate fans and data-driven bettors.",
+    "A suite of tools for data-driven football betting. Track odds movements, build custom xG models, find value bets, and backtest strategies.",
   keywords: [
-    "football betting",
-    "soccer predictions",
-    "expected value",
-    "sports betting",
-    "data analytics",
-    "value betting",
-    "prediction models",
+    "football betting tools",
+    "odds tracker",
+    "xG models",
+    "value bet scanner",
+    "sports betting analytics",
+    "betting strategy backtest",
+    "steam moves",
+    "bookmaker intelligence",
   ],
   authors: [{ name: "Benjamin Bours" }],
   openGraph: {
-    title: "OddsLab - Your Football Prediction Laboratory",
+    title: "OddsLab - Smart Football Betting Tools",
     description:
-      "Experiment with models, test theories, find value bets. Interactive football prediction tools for passionate fans.",
+      "A suite of tools for data-driven football betting. Start simple, go deep.",
     url: "https://oddslab.gg",
     siteName: "OddsLab",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "OddsLab - Your Football Prediction Laboratory",
-    description: "Experiment with models, test theories, find value bets.",
+    title: "OddsLab - Smart Football Betting Tools",
+    description:
+      "A suite of tools for data-driven football betting. Start simple, go deep.",
   },
 };
 
