@@ -3,7 +3,7 @@
 Landing page for **OddsLab** - Your Football Prediction Laboratory
 
 **Live Site:** [oddslab.gg](https://oddslab.gg)
-**App:** [app.oddslab.gg](https://app.oddslab.gg)
+**Live Product:** [market.oddslab.gg](https://market.oddslab.gg) (Bookmaker Intelligence)
 
 ## Tech Stack
 
@@ -185,7 +185,7 @@ This project uses **BEM (Block Element Modifier)** methodology for CSS:
 
 ## Links
 
-- **Main App:** [app.oddslab.gg](https://app.oddslab.gg)
+- **Live Product:** [market.oddslab.gg](https://market.oddslab.gg)
 - **GitHub:** [@benjaminbours](https://github.com/benjaminbours)
 - **Ko-fi:** [Support Development](https://ko-fi.com/oddslab)
 

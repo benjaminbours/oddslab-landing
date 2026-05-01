@@ -4,13 +4,15 @@ Marketing website for **OddsLab** - Your Football Prediction Laboratory
 
 ## Project Overview
 
-This is the landing page for OddsLab, deployed at **oddslab.gg**. It serves as the marketing and presentation site, with the actual application hosted at **app.oddslab.gg**.
+This is the landing page for OddsLab, deployed at **oddslab.gg**. It serves as the marketing and presentation site for the OddsLab tool suite. The current live product is **Bookmaker Intelligence** at **market.oddslab.gg**.
+
+> **Note:** The previous `app.oddslab.gg` subdomain (Model Builder alpha) has been shelved while focus shifted to `market.oddslab.gg`. Do not link to `app.oddslab.gg` from this site — those URLs are broken and Google reports them as "discovered, not indexed", which damages SEO.
 
 ## Brand Identity
 
 **Project Name:** OddsLab
 **Domain:** oddslab.gg
-**App Domain:** app.oddslab.gg
+**Live Product Domain:** market.oddslab.gg (Bookmaker Intelligence)
 
 **Headline:** "Your Football Prediction Laboratory"
 **Subheadline:** "Experiment with models, test theories, find value bets"
@@ -141,7 +143,7 @@ oddslab-landing/
 ### 1. Hero Section
 - Main headline: "Your Football Prediction Laboratory"
 - Subheadline: "Experiment with models, test theories, find value bets"
-- CTA button: "Launch App (Beta)" → links to app.oddslab.gg
+- CTA button: "Launch Bookmaker Intelligence" → links to market.oddslab.gg
 - Dark background with subtle blue radial gradient
 
 ### 2. Features Section (6 cards)
