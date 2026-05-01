@@ -24,8 +24,7 @@ const tools: Tool[] = [
     title: "Model Builder",
     description:
       "Build custom xG prediction models. Test your football theories with real data.",
-    status: "alpha",
-    url: "https://app.oddslab.gg",
+    status: "coming-soon",
   },
   {
     icon: "💎",
@@ -132,14 +131,6 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             Launch Bookmaker Intelligence
-          </a>
-          <a
-            href="https://app.oddslab.gg"
-            className="cta-section__button cta-section__button--secondary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Try Model Builder (Alpha)
           </a>
         </div>
         <p className="cta-section__note">

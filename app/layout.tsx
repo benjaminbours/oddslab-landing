@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://oddslab.gg"),
   title: "OddsLab - Smart Football Betting Tools",
   description:
     "A suite of tools for data-driven football betting. Track odds movements, build custom xG models, find value bets, and backtest strategies.",
@@ -27,6 +28,9 @@ export const metadata: Metadata = {
     "bookmaker intelligence",
   ],
   authors: [{ name: "Benjamin Bours" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "OddsLab - Smart Football Betting Tools",
     description:
