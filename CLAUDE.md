@@ -4,9 +4,11 @@ Marketing website for **OddsLab** - Your Football Prediction Laboratory
 
 ## Project Overview
 
-This is the landing page for OddsLab, deployed at **oddslab.gg**. It serves as the marketing and presentation site for the OddsLab tool suite. The current live product is **Bookmaker Intelligence** at **market.oddslab.gg**.
+This is the landing page for OddsLab, deployed at **oddslab.gg**. It serves as the marketing and presentation site for the OddsLab tool suite. There are two live products:
+- **Bookmaker Intelligence** at **market.oddslab.gg** — odds-movement / steam-move tracking.
+- **Prediction Lens** at **app.oddslab.gg** — build a prediction lens (model), get fair odds, and find value vs the bookmakers.
 
-> **Note:** The previous `app.oddslab.gg` subdomain (Model Builder alpha) has been shelved while focus shifted to `market.oddslab.gg`. Do not link to `app.oddslab.gg` from this site — those URLs are broken and Google reports them as "discovered, not indexed", which damages SEO.
+> **Note (2026-06):** `app.oddslab.gg` has been restored to production (previously shelved as the "Model Builder alpha"). It's fine to link to it again. The in-app concept is now framed as a **"Lens"** (a prediction model applied to a match) rather than "Model Builder" — keep marketing copy coherent with that term.
 
 ## Brand Identity
 

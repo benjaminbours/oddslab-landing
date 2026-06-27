@@ -15,22 +15,23 @@ const tools: Tool[] = [
     icon: "📈",
     title: "Bookmaker Intelligence",
     description:
-      "Track odds movements across bookmakers and spot steam moves before markets adjust.",
+      "Track how odds shift across bookmakers and catch steam moves as sharp money moves the market.",
     status: "live",
     url: "https://market.oddslab.gg",
   },
   {
-    icon: "🧪",
-    title: "Model Builder",
+    icon: "🔬",
+    title: "Prediction Lens",
     description:
-      "Build custom xG prediction models. Test your football theories with real data.",
-    status: "coming-soon",
+      "Build a prediction lens — choose the features and weights you trust, get fair odds, and spot value against the bookmakers.",
+    status: "beta",
+    url: "https://app.oddslab.gg",
   },
   {
     icon: "💎",
     title: "Value Bet Scanner",
     description:
-      "Daily value opportunities based on your model predictions vs bookmaker odds.",
+      "Daily value opportunities across fixtures, ranked by your lens predictions vs bookmaker odds.",
     status: "coming-soon",
   },
   {
@@ -121,7 +122,8 @@ export default function Home() {
       <section className="cta-section">
         <h2 className="cta-section__title">Ready to Level Up Your Betting?</h2>
         <p className="cta-section__subtitle">
-          Start with Bookmaker Intelligence - it's live and free to use
+          Track the market with Bookmaker Intelligence, then build your own
+          prediction lens — both live and free to use.
         </p>
         <div className="cta-section__buttons">
           <a
@@ -131,6 +133,14 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             Launch Bookmaker Intelligence
+          </a>
+          <a
+            href="https://app.oddslab.gg"
+            className="cta-section__button cta-section__button--secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Prediction Lens
           </a>
         </div>
         <p className="cta-section__note">
