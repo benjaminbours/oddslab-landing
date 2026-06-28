@@ -49,10 +49,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero__content">
-          <h1 className="hero__brand">
-            Odds <span className="lab-word">Lab</span>
+          <h1 className="hero__heading">
+            <span className="hero__brand">
+              Odds <span className="lab-word">Lab</span>
+            </span>
+            <span className="hero__title">
+              Football Odds Tracker &amp; Betting Tools
+            </span>
           </h1>
-          <h2 className="hero__title">Smart Football Betting Tools</h2>
           <p className="hero__subtitle">
             A suite of tools for data-driven football betting. Start simple, go
             deep.
