@@ -1,4 +1,5 @@
 import "./landing.css";
+import { LogoMark } from "./LogoMark";
 
 type ToolStatus = "live" | "alpha" | "beta" | "coming-soon";
 
@@ -49,6 +50,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero__content">
+          <LogoMark className="hero__mark" />
           <h1 className="hero__heading">
             <span className="hero__brand">
               Odds <span className="lab-word">Lab</span>

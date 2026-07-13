@@ -44,6 +44,13 @@
   z-index: 1;
 }
 
+.hero__mark {
+  display: block;
+  width: 104px;
+  height: 104px;
+  margin: 0 auto 1.5rem;
+}
+
 .hero__heading {
   margin: 0;
   font-weight: inherit;
@@ -427,6 +434,12 @@
    ============================================ */
 
 @media (max-width: 768px) {
+  .hero__mark {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 1rem;
+  }
+
   .hero__brand {
     font-size: 2.5rem;
   }
