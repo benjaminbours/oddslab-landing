@@ -33,6 +33,14 @@ jobs:
 
       - name: Build Next.js
         run: npm run build
+        env:
+          # PostHog project API key is a publishable client key (it ships in the
+          # JS bundle), so it lives here rather than in secrets. NEXT_PUBLIC vars
+          # are inlined at build time — CI must set them for analytics to light up.
+          # Swap to ${{ vars.NEXT_PUBLIC_POSTHOG_KEY }} if you'd rather manage it
+          # as a repo variable.
+          NEXT_PUBLIC_POSTHOG_KEY: phc_yEJvshMkRnuYu89WW5MPwpqcuVDkRCQJUQYP4Wg8wCQN
+          NEXT_PUBLIC_POSTHOG_HOST: https://eu.i.posthog.com
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
