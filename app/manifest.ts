@@ -6,10 +6,10 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "OddsLab — Football Odds Tracker & Betting Tools",
+    name: "OddsLab — Football Market Research & Odds Tracking",
     short_name: "OddsLab",
     description:
-      "Track football odds movements and steam moves across top leagues, build custom prediction models, and find value bets.",
+      "Track football odds movements and steam moves across the top leagues, build your own prediction models, and measure them against the closing line.",
     start_url: "/",
     display: "standalone",
     background_color: "#0B1220",

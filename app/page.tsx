@@ -14,9 +14,9 @@ interface Tool {
 const tools: Tool[] = [
   {
     icon: "📈",
-    title: "Bookmaker Intelligence",
+    title: "Market Monitor",
     description:
-      "Track how odds shift across bookmakers and catch steam moves as sharp money moves the market.",
+      "Follow how the price moves across bookmakers, and catch the steam moves that show where the money is going.",
     status: "live",
     url: "https://market.oddslab.gg",
   },
@@ -24,23 +24,9 @@ const tools: Tool[] = [
     icon: "🔬",
     title: "Prediction Lens",
     description:
-      "Build a prediction lens — choose the features and weights you trust, get fair odds, and spot value against the bookmakers.",
+      "Choose the features and weights you actually trust, get a fair price for the match, and compare it to the market.",
     status: "beta",
     url: "https://app.oddslab.gg",
-  },
-  {
-    icon: "💎",
-    title: "Value Bet Scanner",
-    description:
-      "Daily value opportunities across fixtures, ranked by your lens predictions vs bookmaker odds.",
-    status: "coming-soon",
-  },
-  {
-    icon: "🔄",
-    title: "Backtest Lab",
-    description:
-      "Test strategies against historical data. See what would have worked before risking real money.",
-    status: "coming-soon",
   },
 ];
 
@@ -56,15 +42,16 @@ export default function Home() {
               Odds <span className="lab-word">Lab</span>
             </span>
             <span className="hero__title">
-              Football Odds Tracker &amp; Betting Tools
+              The research desk for football markets
             </span>
           </h1>
           <p className="hero__subtitle">
-            A suite of tools for data-driven football betting. Start simple, go
-            deep.
+            Every financial market has instrumentation — pricing, position
+            tracking, risk discipline, a record you can audit. Football has none
+            of it. OddsLab is that toolkit, built in the open.
           </p>
           <a href="#tools" className="hero__cta">
-            Explore Tools
+            Explore the desk
           </a>
         </div>
       </section>
@@ -76,8 +63,8 @@ export default function Home() {
             The Odds<span className="lab-word">Lab</span> Suite
           </h2>
           <p className="tools__subtitle">
-            Start with one tool, expand as you need. Each tool works standalone
-            or together.
+            Two instruments: one for reading the market, one for pricing it
+            yourself. Each works on its own, or as a pair.
           </p>
           <div className="tools__grid">
             {tools.map((tool, index) => {
@@ -126,10 +113,11 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="cta-section">
-        <h2 className="cta-section__title">Ready to Level Up Your Betting?</h2>
+        <h2 className="cta-section__title">See the market, then price it yourself</h2>
         <p className="cta-section__subtitle">
-          Track the market with Bookmaker Intelligence, then build your own
-          prediction lens — both live and free to use.
+          Follow how the market moves with the Market Monitor, then build the
+          model you actually believe with the Prediction Lens — both live and
+          free to use.
         </p>
         <div className="cta-section__buttons">
           <a
@@ -138,7 +126,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Launch Bookmaker Intelligence
+            Launch Market Monitor
           </a>
           <a
             href="https://app.oddslab.gg"
@@ -150,8 +138,14 @@ export default function Home() {
           </a>
         </div>
         <p className="cta-section__note">
-          All tools are free during beta. Supporters will get early access to
-          advanced features.
+          Both instruments are free during beta. Supporters help keep them
+          running.
+        </p>
+        <p className="cta-section__note">
+          OddsLab is a modelling and research toolkit, not a tipping service. It
+          promises no winnings — our own published results show how hard beating
+          the closing line really is, and most people who try lose money. If
+          this stops being a considered decision, stop. 18+.
         </p>
       </section>
 

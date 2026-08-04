@@ -17,9 +17,9 @@ const SITE_URL = "https://oddslab.gg";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "OddsLab — Football Odds Tracker & Betting Tools",
+  title: "OddsLab — Football Market Research & Odds Tracking",
   description:
-    "Track football odds movements and steam moves across top leagues, build custom prediction models, and find value bets. A free suite of data-driven football betting tools.",
+    "Track football odds movements and steam moves across the top leagues, build your own prediction models, and measure them against the closing line. A free research toolkit for football markets.",
   keywords: [
     "football odds tracker",
     "odds tracking",
@@ -28,9 +28,7 @@ export const metadata: Metadata = {
     "steam moves",
     "closing line value",
     "football betting tools",
-    "value bet scanner",
     "sports betting analytics",
-    "betting strategy backtest",
     "bookmaker intelligence",
     "xG models",
   ],
@@ -39,9 +37,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "OddsLab — Football Odds Tracker & Betting Tools",
+    title: "OddsLab — Football Market Research & Odds Tracking",
     description:
-      "Track football odds movements and steam moves, build prediction models, and find value bets. A free, data-driven betting toolkit.",
+      "The research desk for football markets: track how the price moves, build the model you believe, and measure it against the closing line.",
     url: SITE_URL,
     siteName: "OddsLab",
     type: "website",
@@ -50,9 +48,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@oddslabgg",
     creator: "@oddslabgg",
-    title: "OddsLab — Football Odds Tracker & Betting Tools",
+    title: "OddsLab — Football Market Research & Odds Tracking",
     description:
-      "Track football odds movements and steam moves, build prediction models, and find value bets. A free, data-driven betting toolkit.",
+      "The research desk for football markets: track how the price moves, build the model you believe, and measure it against the closing line.",
   },
 };
 
@@ -81,18 +79,18 @@ const STRUCTURED_DATA = {
       url: SITE_URL,
       name: "OddsLab",
       description:
-        "A free suite of data-driven football betting tools: odds tracking, steam-move detection, custom prediction models, and value-bet scanning.",
+        "A free research toolkit for football markets: odds-movement and steam-move tracking, plus custom prediction models priced against the market.",
       publisher: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en",
     },
     {
       "@type": "WebApplication",
-      name: "OddsLab Bookmaker Intelligence",
+      name: "OddsLab Market Monitor",
       url: "https://market.oddslab.gg",
       applicationCategory: "SportsApplication",
       operatingSystem: "Web",
       description:
-        "Track football odds movements and catch steam moves as sharp money moves the market.",
+        "Follow how football odds move across bookmakers and catch the steam moves that show where the money is going.",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       publisher: { "@id": `${SITE_URL}/#organization` },
     },
@@ -103,7 +101,7 @@ const STRUCTURED_DATA = {
       applicationCategory: "SportsApplication",
       operatingSystem: "Web",
       description:
-        "Build a prediction lens — choose the features and weights you trust, get fair odds, and spot value against the bookmakers.",
+        "Build a prediction lens — choose the features and weights you trust, get a fair price for the match, and compare it to the market.",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       publisher: { "@id": `${SITE_URL}/#organization` },
     },

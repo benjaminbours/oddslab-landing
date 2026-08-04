@@ -30,7 +30,7 @@ export default function NotFound() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Bookmaker Intelligence
+            Market Monitor
           </a>
           <a
             href="https://app.oddslab.gg"
